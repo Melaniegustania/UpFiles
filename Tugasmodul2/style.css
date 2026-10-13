@@ -1,0 +1,258 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef0fa, #f0ecf8, #e9eff8);
+    color: #30465c;
+    line-height: 1.7;
+}
+
+header {
+    background: linear-gradient(135deg, #cbd7ef, #c5d0eb, #d8cee9);
+    color: #294c60;
+    text-align: center;
+    padding: 28px 20px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+header p {
+    color: #526b85;
+    font-size: 14px;
+}
+
+nav {
+    background: linear-gradient(90deg, #3d5b7a, #4a6288, #514875);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 4px 8px;
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #c8d3e9;
+    color: #294c60;
+}
+
+main {
+    max-width: 1000px;
+    width: 90%;
+    margin: 25px auto;
+    padding: 0;
+}
+
+section {
+    background: linear-gradient(135deg, #ffffff, #f8f8fc);
+    margin-bottom: 18px;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(65, 75, 110, 0.10);
+    border: 1px solid #d9deed;
+    overflow: hidden;
+}
+
+section h2 {
+    color: #405f88;
+    margin-bottom: 14px;
+    text-align: left;
+    font-size: 20px;
+}
+
+section p {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.profile-photo {
+    width: 220px;
+    height: 260px;
+    margin: 15px auto 20px;
+    padding: 5px;
+    border: 2px solid #c3cde2;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #f1f2f8;
+    box-shadow: 0 4px 12px rgba(65, 75, 110, 0.12);
+}
+
+.profile-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.identity-info p {
+    margin-bottom: 8px;
+}
+
+.activity-list {
+    padding-left: 25px;
+}
+
+.activity-list li {
+    margin-bottom: 8px;
+}
+
+.experience-photo {
+    display: block;
+    float: right;
+    width: 40%;
+    max-width: 360px;
+    height: 220px;
+    object-fit: cover;
+    margin: 0 0 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(65, 75, 110, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.experience-photo:hover {
+    transform: scale(1.02);
+}
+
+.activity-photo {
+    float: right;
+    width: 40%;
+    max-width: 360px;
+    margin: 0 0 15px 25px;
+}
+
+.activity-photo img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(65, 75, 110, 0.15);
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.experience p {
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+footer {
+    background: linear-gradient(90deg, #3d5b7a, #4a6288, #514875);
+    color: #ffffff;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+    border-radius: 20px 20px 0 0;
+}
+
+footer p {
+    margin: 4px 0;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    .experience-photo,
+    .activity-photo {
+        width: 42%;
+        margin-left: 18px;
+    }
+
+    .experience-photo,
+    .activity-photo img {
+        height: 190px;
+    }
+}
+
+@media (max-width: 550px) {
+    nav a {
+        margin: 4px;
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    main {
+        width: 92%;
+        margin: 18px auto;
+    }
+
+    section {
+        padding: 16px;
+        margin-bottom: 15px;
+    }
+
+    section h2 {
+        font-size: 17px;
+    }
+
+    section p {
+        font-size: 13px;
+    }
+
+    .profile-photo {
+        width: 180px;
+        height: 220px;
+    }
+
+    .experience-photo,
+    .activity-photo {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 15px;
+    }
+
+    .experience-photo,
+    .activity-photo img {
+        max-height: 280px;
+    }
+
+    footer {
+        padding: 18px 10px;
+    }
+ 
+}
+```
